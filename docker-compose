@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/todo_fireside:latest
+    env_file:
+      - todo_fireside-env
+    ports:
+      - "3000:3000"
